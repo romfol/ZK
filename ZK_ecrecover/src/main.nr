@@ -1,13 +1,12 @@
 use dep::ecrecover;
 
-fn main(x: u64, y: pub u64) {
-    assert(x != y);
-}
-
-#[test]
-fn test_main() {
-    main(1, 2);
-
-    // Uncomment to make test fail
-    // main(1, 1);
+fn main(
+    pub_key_x: [u8; 32],
+    pub_key_y: [u8; 32],
+    signature: [u8; 64],
+    hashed_message: pub [u8; 32],
+    expected_address: pub Field,
+) {
+    let address = ecrecover::ecrecover(pub_key_x, pub_key_y, signature, hashed_message);
+    assert(address == expected_address);
 }

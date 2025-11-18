@@ -1,7 +1,9 @@
 [package]
 name = "ZK_ecrecover"
 type = "bin"
-authors = [""]
+authors = ["romfol"]
 
 [dependencies]
-ecrecover = { tag = "v1.0.0", git = "https://github.com/colinnielsen/ecrecover-noir" }
+ecrecover = { git = "https://github.com/colinnielsen/ecrecover-noir", tag = "v1.0.0" }
+ # changed manually the type in noir-array-helper "((56 - j * 8) as u8)" for "((56 - j * 8) as u64)"
+noir_array_helpers = { path = "../../../nargo/github.com/colinnielsen/noir-array-helpers/v0.30.0" }
