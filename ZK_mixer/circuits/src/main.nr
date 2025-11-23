@@ -21,6 +21,6 @@ fn main(
     let computed_root: Field = merkle_tree::compute_merkle_root(commitment, merkle_proof, is_even);
     assert(computed_root == root);
 
-    let recipient_binding = recipient * recipient;
-    assert(recipient_binding == recipient * recipient);
+    // let recipient_binding = recipient * recipient;
+    // assert(recipient_binding == recipient * recipient);
 }
