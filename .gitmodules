@@ -1,9 +1,0 @@
-[submodule "lib/poseidon2-evm"]
-	path = lib/poseidon2-evm
-	url = https://github.com/zemse/poseidon2-evm
-[submodule "ZK_mixer/contracts/lib/poseidon2-evm"]
-	path = ZK_mixer/contracts/lib/poseidon2-evm
-	url = https://github.com/zemse/poseidon2-evm
-[submodule "ZK_mixer/contracts/lib/openzeppelin-contracts"]
-	path = ZK_mixer/contracts/lib/openzeppelin-contracts
-	url = https://github.com/OpenZeppelin/openzeppelin-contracts
